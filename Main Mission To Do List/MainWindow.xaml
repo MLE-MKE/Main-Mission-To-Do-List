@@ -5,21 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Main_Mission_To_Do_List"
         mc:Ignorable="d"
+       
+    
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="-666,-397,-663,-317" Width="2160" Height="1440">
-        <Menu>
-            <!-- File Menu -->
-            <MenuItem Header="File" FontSize="32" Click="MenuItem_Click">
-                <MenuItem Header="New"/>
-                <MenuItem Header="Save"/>
-                <MenuItem Header="Open"/>
-                <MenuItem Header="MenuItem"/>
-            </MenuItem>
+        <DockPanel>
+            <!--Let the user change the title in the main window ^^
+           suck my b a wls -->
+            <Menu DockPanel.Dock="Top">
+                <!-- File Menu -->
+                <!-- File Button?-->
+                <MenuItem Header="File" FontSize="32">
+                    
+                    
+                    <MenuItem Header="New" Click="MenuItem_New_Click"/>
+                    <MenuItem Header="Save" Click="MenuItem_SaveAs_Click"/>
+                    <MenuItem Header="Open" Click="MenuItem_Open_Click"/>
+                    
+                    <Separator />
+                </MenuItem>
 
-            <!-- Options Menu -->
-            <MenuItem Header="Options" FontSize="32">
-                <!-- Add submenu items for options here -->
-            </MenuItem>
-        </Menu>
+  
+               
+            </Menu>
+        </DockPanel>
     </Grid>
 </Window>

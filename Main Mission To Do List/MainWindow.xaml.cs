@@ -16,9 +16,7 @@ using System.Windows.Shapes;
 
 namespace Main_Mission_To_Do_List
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -26,22 +24,22 @@ namespace Main_Mission_To_Do_List
             InitializeComponent();
         }
 
-        //New Menu Item
-        
-private void MenuItem_Click(object sender, RoutedEventArgs e)
+       
+        private void MenuItem_New_Click(object sender, RoutedEventArgs e)
         {
             
         }
 
+        
         private void MenuItem_SaveAs_Click(object sender, RoutedEventArgs e)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "XML files(*.xml)|*.xml|All files (*.*)|*.*";
-            if (saveFileDialog.ShowDialog()==true)
-            {
+            
+        }
 
-            }
-
+        
+        private void MenuItem_Open_Click(object sender, RoutedEventArgs e)
+        {
+           
         }
     }
 }
